@@ -1,0 +1,18 @@
+.cart-product-img {
+  max-height: 90px;
+  object-fit: contain;
+}
+
+.cart-product-title {
+  font-size: 1rem;
+}
+
+.cart-card {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.04);
+}
+.cart-title {
+  color: #0a0a0a;
+  font-weight: bold;
+}
