@@ -29,7 +29,7 @@ const Navbar = ({ cartCount }) => {
           id="navbarNav"
         >
           <div className="mx-auto w-50 d-none d-lg-block">
-            <form className="d-flex" role="search">
+            <form className="d-flex" /* role="search" */>
               <input
                 className="form-control me-2 rounded-pill"
                 type="search"

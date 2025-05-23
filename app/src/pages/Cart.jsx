@@ -78,7 +78,7 @@ const Cart = ({ cart, setCart }) => {
             <button
               className="btn btn-primary btn-lg px-5"
               onClick={() =>
-                alert("Thank you for your purchase! (Demo action)")
+                alert("Thank you for your purchase! ")
               }
               disabled={cart.length === 0}
             >
