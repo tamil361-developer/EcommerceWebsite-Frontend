@@ -11,15 +11,16 @@ import c5 from "../assets/catecorys/c5.jpg";
 import c6 from "../assets/catecorys/c6.jpg";
 
 /* CAROUSEL */
-import ca1 from "../assets/carousel/c1.webp";
-import ca2 from "../assets/carousel/c2.webp";
-import ca3 from "../assets/carousel/c3.webp";
-import ca4 from "../assets/carousel/c4.webp";
-import ca5 from "../assets/carousel/c5.webp";
-import ca6 from "../assets/carousel/c6.webp";
+import ca1 from "../assets/carousel/ca1.webp";
+import ca2 from "../assets/carousel/ca2.webp";
+import ca3 from "../assets/carousel/ca3.webp";
+import ca4 from "../assets/carousel/ca4.webp";
+import ca5 from "../assets/carousel/ca5.webp";
+import ca6 from "../assets/carousel/ca6.webp";
 
 /* CATECGORIES LISTS */
 const categories = [
+  
   {
     name: "Mobiles",
     icon: "bi-phone",
@@ -737,7 +738,7 @@ const Home = ({ cart, setCart }) => {
     <>
       {/*  CATEGORIES LIST  */}
       <div className="container mt-5">
-        <div className="d-flex flex-row flex-nowrap justify-content-center align-items-stretch gap-3 overflow-auto pb-3 shadow-sm">
+        <div className="d-flex flex-row flex-nowrap gap-2 ms-lg-5  gap-lg-5 overflow-auto pb-3 shadow-sm">
           {categories.map((cat) => (
             <div key={cat.name} style={{ minWidth: 120 }}>
               <div
@@ -778,9 +779,100 @@ const Home = ({ cart, setCart }) => {
       {/* CATEGORIES LIST END */}
 
       {/*CAROUSEL  */}
-      
-      {/* CAROUSEL END */}
+      <div className="container mt-5">
+        <div
+          id="homeCarousel"
+          className="carousel slide shadow-sm"
+          data-bs-ride="carousel"
+        >
+          <div className="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#homeCarousel"
+              data-bs-slide-to="0"
+              className="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#homeCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#homeCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#homeCarousel"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#homeCarousel"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#homeCarousel"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+          </div>
+          <div className="carousel-inner rounded">
+            <div className="carousel-item active">
+              <img src={ca1} className="d-block w-100" alt="Carousel 1" />
+            </div>
+            <div className="carousel-item">
+              <img src={ca2} className="d-block w-100" alt="Carousel 2" />
+            </div>
+            <div className="carousel-item">
+              <img src={ca3} className="d-block w-100" alt="Carousel 3" />
+            </div>
+            <div className="carousel-item">
+              <img src={ca4} className="d-block w-100" alt="Carousel 4" />
+            </div>
+            <div className="carousel-item">
+              <img src={ca5} className="d-block w-100" alt="Carousel 5" />
+            </div>
+            <div className="carousel-item">
+              <img src={ca6} className="d-block w-100" alt="Carousel 6" />
+            </div>
+          </div>
+          <button
+            className="carousel-control-prev"
+            type="button"
+            data-bs-target="#homeCarousel"
+            data-bs-slide="prev"
+          >
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button
+            className="carousel-control-next"
+            type="button"
+            data-bs-target="#homeCarousel"
+            data-bs-slide="next"
+          >
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
 
+      {/* CAROUSEL END */}
 
       {/* PRODUCTS LIST */}
       <div className="container mt-5 ">

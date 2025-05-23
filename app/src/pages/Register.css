@@ -1,0 +1,25 @@
+/* Flipkart-style registration form CSS */
+.register-container {
+  min-height: 80vh;
+}
+
+.register-card {
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem;
+  box-shadow: 0 2px 16px rgba(44, 14, 212, 0.08);
+  border-radius: 1rem;
+}
+
+.register-title {
+  color: #000000;
+  font-weight: bold;
+}
+
+.register-link {
+  color: #1976d2;
+  text-decoration: none;
+}
+.register-link:hover {
+  text-decoration: underline;
+}

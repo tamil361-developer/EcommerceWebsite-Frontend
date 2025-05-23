@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Categories from "./pages/Categories";
 import Cart from "./pages/Cart";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -22,6 +23,7 @@ function App() {
             element={<Cart cart={cart} setCart={setCart} />}
           />
           <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </div>
     </>

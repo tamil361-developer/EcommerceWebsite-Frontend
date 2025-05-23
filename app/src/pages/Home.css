@@ -1,3 +1,15 @@
+/* Carousel image sizing for mobile and desktop */
+.carousel-inner.rounded .carousel-item img {
+  max-height: 350px;
+  object-fit: cover;
+}
+
+@media (min-width: 576px) {
+  .carousel-inner.rounded .carousel-item img {
+    max-height: 500px;
+    min-height: 220px;
+  }
+}
 /* Category Card Selected State */
 .category-card.border-primary.shadow {
   border-color: #0d6efd !important;

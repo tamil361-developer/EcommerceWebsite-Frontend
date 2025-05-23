@@ -65,7 +65,7 @@ const Login = () => {
         </form>
         <div className="text-center mt-3">
           <span className="text-muted small">New to Flipkart?</span>
-          <a href="#" className="ms-1 login-link">
+          <a href="/register" className="ms-1 login-link">
             Create an account
           </a>
         </div>
