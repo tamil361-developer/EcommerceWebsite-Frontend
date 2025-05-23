@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+
+import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
 const Login = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -65,9 +68,14 @@ const Login = () => {
         </form>
         <div className="text-center mt-3">
           <span className="text-muted small">New to Flipkart?</span>
-          <a href="/register" className="ms-1 login-link">
+          <button
+            type="button"
+            className="ms-1 login-link btn btn-link p-0 align-baseline"
+            style={{ fontSize: "inherit" }}
+            onClick={() => navigate('/register')}
+          >
             Create an account
-          </a>
+          </button>
         </div>
       </div>
     </div>
